@@ -14,10 +14,10 @@ spec:
     helm:
       values: |
         image:
-          tag: v3
+          tag: "v3"
         ingress:
-          host: pr-mynginx-13..xip.io
-      version: v3
+          host: "pr-mynginx-13.165.232.98.105.xip.io"
+      version: "v3"
   destination:
     namespace: 
     server: https://kubernetes.default.svc
