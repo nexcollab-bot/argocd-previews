@@ -19,7 +19,7 @@ spec:
           host: "pr-mynginx-13.165.232.98.105.xip.io"
       version: v3
   destination:
-    namespace: 
+    namespace: "pr-mynginx-13"
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
