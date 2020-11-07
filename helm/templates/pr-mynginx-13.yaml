@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pr-mynginx-13
+  name: "pr-mynginx-13"
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -9,12 +9,12 @@ spec:
   project: previews
   source:
     path: helm
-    repoURL: https://github.com/nexcollab-bot/{{.REPO}}.git
+    repoURL: https://github.com/nexcollab-bot/mynginx.git
     targetRevision: HEAD
     helm:
       values: |
         image:
-          tag: 
+          tag: v3
         ingress:
           host: pr-mynginx-13..xip.io
       version: v3
