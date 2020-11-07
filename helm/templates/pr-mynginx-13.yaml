@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     helm:
       values: |
-        image: 
+        image: 165.232.98.105:5000:mynginx
           tag: v13
         ingress:
           host: pr-mynginx-13.165.232.98.105.xip.io
