@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: "pr-mynginx-13"
+  name: pr-mynginx-13
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -16,10 +16,10 @@ spec:
         image: 165.232.98.105:5000/mynginx
           tag: v13
         ingress:
-          host: "pr-mynginx-13.165.232.98.105.xip.io"
+          host: pr-mynginx-13.165.232.98.105.xip.io
       version: v3
   destination:
-    namespace: "pr-mynginx-13"
+    namespace: pr-mynginx-13
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
