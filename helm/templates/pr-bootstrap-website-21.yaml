@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/nexcollab-bot/bootstrap-website.git
     targetRevision: HEAD
     helm:
-      values:
+      values: |
         image: 165.232.98.105:5000/bootstrap-website
           tag: v21
         ingress:
