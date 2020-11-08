@@ -8,7 +8,7 @@ metadata:
 spec:
   project: previews
   source:
-    path: helm
+    path: yamls
     repoURL: https://github.com/nexcollab-bot/bootstrap-website.git
     targetRevision: HEAD
     helm:
