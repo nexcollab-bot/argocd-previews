@@ -19,7 +19,7 @@ spec:
           host: pr-bootstrap-website-21.165.232.98.105.xip.io
       version: v3
   destination:
-    namespace: 
+    namespace: pr-bootstrap-website-21
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
