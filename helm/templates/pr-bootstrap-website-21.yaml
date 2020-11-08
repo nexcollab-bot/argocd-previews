@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         image: 
-          tag: v21
+          tag: 21
         ingress:
           host: pr-bootstrap-website-21.165.232.98.105.xip.io
       version: v3
