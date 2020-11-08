@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     helm:
       values: |
-        image: 165.232.98.105:5000/bootstrap-website:v21
+        image: 
           tag: v21
         ingress:
           host: pr-bootstrap-website-21.165.232.98.105.xip.io
