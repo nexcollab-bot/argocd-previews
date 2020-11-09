@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pr-bootstrap-website-51
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: previews
+  source:
+    path: yamls
+    repoURL: https://github.com/nexcollab-bot/bootstrap-website.git
+    targetRevision: HEAD
+    helm:
+      values: |
+        image:
+          tag: 51
+        ingress:
+          host: pr-bootstrap-website-51.165.232.98.105.xip.io
+      version: v3
+  destination:
+    namespace: pr-bootstrap-website-51
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
