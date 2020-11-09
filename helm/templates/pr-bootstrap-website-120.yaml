@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         image:
-          tag: 120
+          tag: 120.68
         ingress:
           host: pr-bootstrap-website-120.165.232.98.105.xip.io
       version: v3
