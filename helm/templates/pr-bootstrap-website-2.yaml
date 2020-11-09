@@ -16,7 +16,7 @@ spec:
         image:
           tag: latest
         ingress:
-          host: pr-bootstrap-website-2.165.232.98.105.xip.io
+          host: "pr-bootstrap-website-2.165.232.98.105.xip.io:30586"
       version: v3
   destination:
     namespace: pr-bootstrap-website-2
